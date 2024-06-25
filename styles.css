@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+    font-family: Arial, sans-serif;
+    position: relative; /* Ensure relative positioning for absolute elements */
+}
+
+.game-container {
+    text-align: center;
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.grid-cell[data-value="2"] {
+    background-color: #eee4da; /* Color for cells with value 2 */
+}
+
+.grid-cell[data-value="4"] {
+    background-color: #ede0c8; /* Color for cells with value 4 */
+}
+
+.grid-cell[data-value="8"] {
+    background-color: #f2b179; /* Color for cells with value 8 */
+    color: #f9f6f2; /* Text color for cells with value 8 */
+}
+
+.grid-cell[data-value="16"] {
+    background-color: #f59563; /* Color for cells with value 16 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="32"] {
+    background-color: #f67c5f; /* Color for cells with value 32 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="64"] {
+    background-color: #f65e3b; /* Color for cells with value 64 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="128"] {
+    background-color: #edcf72; /* Color for cells with value 128 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="256"] {
+    background-color: #edcc61; /* Color for cells with value 256 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="512"] {
+    background-color: #edc850; /* Color for cells with value 512 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="1024"] {
+    background-color: #edc53f; /* Color for cells with value 1024 */
+    color: #f9f6f2; /* Text color */
+}
+
+.grid-cell[data-value="2048"] {
+    background-color: #edc22e; /* Color for cells with value 2048 */
+    color: #f9f6f2; /* Text color */
+}
+
